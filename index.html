@@ -1,9 +1,188 @@
-Tasarım ekleyelim
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Kurşunlu Su Tesisatçısı | Gürbüz Tesisat</title>
+<meta name="description" content="Çankırı Kurşunlu su tesisatçısı Gürbüz Tesisat. Gider açma, su kaçağı tespiti, doğalgaz tesisatı, kombi bakım, petek temizliği ve güneş enerjisi sistemleri.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-JSON’lu yapı kuralım
+<!-- 🔹 JSON-LD LocalBusiness (ÇOK KRİTİK SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Gürbüz Tesisat",
+  "image": "https://gurbuztesisat.github.io/",
+  "telephone": "+905346825560",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kurşunlu",
+    "addressRegion": "Çankırı",
+    "addressCountry": "TR"
+  },
+  "areaServed": "Çankırı Kurşunlu",
+  "url": "https://gurbuztesisat.github.io/",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100063294876188"
+  ]
+}
+</script>
 
-AI asistan bağlayalım
+<style>
+:root{
+  --main:#0f4c75;
+  --accent:#25D366;
+  --bg:#f4f6f8;
+}
+body{margin:0;font-family:Segoe UI,Arial;background:var(--bg)}
+header{
+  background:linear-gradient(135deg,var(--main),#3282b8);
+  color:#fff;
+  padding:60px 20px;
+  text-align:center;
+}
+header h1{margin:0;font-size:2.2rem}
+header p{margin-top:10px}
+.btn{
+  background:var(--accent);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:20px;
+}
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+footer{
+  background:#111827;
+  color:#cbd5e1;
+  text-align:center;
+  padding:20px;
+}
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:var(--accent);
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* 🤖 AI Asistan */
+.ai-box{
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  width:300px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 6px 20px rgba(0,0,0,.25);
+  display:none;
+}
+.ai-header{
+  background:var(--main);
+  color:#fff;
+  padding:10px;
+  border-radius:14px 14px 0 0;
+  font-weight:bold;
+}
+.ai-content{padding:12px;font-size:14px}
+.ai-btn{
+  display:block;
+  background:#e5e7eb;
+  margin:6px 0;
+  padding:8px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#000;
+}
+.ai-toggle{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:var(--main);
+  color:#fff;
+  padding:12px 16px;
+  border-radius:30px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kurşunlu Su Tesisatçısı</h1>
+  <p>Hızlı • Güvenilir • Garantili Hizmet</p>
+  <a href="tel:+905346825560" class="btn">📞 0534 682 55 60</a>
+</header>
+
+<section class="container">
+  <h2 style="text-align:center">Hizmetlerimiz</h2>
+  <div class="cards">
+    <div class="card">Gider Açma</div>
+    <div class="card">Su Kaçağı Tespiti</div>
+    <div class="card">Doğalgaz Tesisatı</div>
+    <div class="card">Kombi Bakım</div>
+    <div class="card">Kat Kaloriferi</div>
+    <div class="card">Petek Temizliği</div>
+    <div class="card">Duşakabin</div>
+    <div class="card">Güneş Enerjisi Sistemleri</div>
+  </div>
+</section>
+
+<section class="container" style="text-align:center">
+  <h2>İletişim</h2>
+  <p>
+    📞 <a href="tel:+905346825560">0534 682 55 60</a><br>
+    📍 Çankırı / Kurşunlu<br>
+    🔵 <a href="https://www.facebook.com/profile.php?id=100063294876188" target="_blank">Facebook</a>
+  </p>
+</section>
+
+<footer>
+© 2026 Gürbüz Tesisat – Kurşunlu / Çankırı
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/905346825560?text=Merhaba%20Kurşunlu’da%20tesisat%20hizmeti%20için%20ulaşıyorum."
+   class="whatsapp">💬 WhatsApp</a>
+
+<!-- 🤖 AI ASİSTAN -->
+<div class="ai-toggle" onclick="toggleAI()">🤖 Yardım</div>
+
+<div class="ai-box" id="aiBox">
+  <div class="ai-header">Gürbüz Tesisat Asistanı</div>
+  <div class="ai-content">
+    Size nasıl yardımcı olabilirim?
+    <a class="ai-btn" href="tel:+905346825560">📞 Hemen Arayın</a>
+    <a class="ai-btn" href="https://wa.me/905346825560">💬 WhatsApp Yaz</a>
+    <a class="ai-btn" href="#">🚰 Su Kaçağı</a>
+    <a class="ai-btn" href="#">🔥 Kombi / Petek</a>
+  </div>
+</div>
+
+<script>
+function toggleAI(){
+  const box=document.getElementById("aiBox");
+  box.style.display = box.style.display==="block" ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
-
